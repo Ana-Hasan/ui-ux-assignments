@@ -1,0 +1,376 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave Corner | Online Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="header">
+        <a href="#home" class="logo">Crave<span>Corner.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <form class="search-form" action="#menu">
+                <label class="visually-hidden" for="search">Search food</label>
+                <input type="search" id="search" placeholder="Search food...">
+                <button type="submit">Search</button>
+            </form>
+            <a href="#menu" class="order-btn">Order Now</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BANNER SECTION -->
+        <section class="banner" id="home">
+            <div class="banner-content">
+                <p class="eyebrow">FRESH • TASTY • DELIVERED</p>
+                <h1>Good Food.<br>Good Mood.</h1>
+                <p>Delicious food made with love, delivered right to your doorstep.</p>
+                <a href="#menu" class="primary-btn">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <!-- RESTAURANT INFORMATION -->
+        <section class="restaurant-info">
+            <article class="info-box">
+                <h3>4.8 / 5</h3>
+                <p>Customer Rating</p>
+            </article>
+
+            <article class="info-box">
+                <h3>Multi-Cuisine</h3>
+                <p>Indian, Italian, Chinese</p>
+            </article>
+
+            <article class="info-box">
+                <h3>25-35 Min</h3>
+                <p>Delivery Time</p>
+            </article>
+
+            <article class="info-box">
+                <h3>Patiala, Punjab</h3>
+                <p>Our Location</p>
+            </article>
+
+            <article class="info-box special-info">
+                <h3>20% OFF</h3>
+                <p>On your first order</p>
+            </article>
+        </section>
+
+        <!-- FOOD CATEGORIES -->
+        <section class="section" id="categories">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT ARE YOU CRAVING?</p>
+                <h2>Explore Categories</h2>
+            </div>
+
+            <div class="category-container">
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300"
+                         alt="Fresh pizza">
+                    <h3>Pizza</h3>
+                </a>
+
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300"
+                         alt="Juicy burger">
+                    <h3>Burgers</h3>
+                </a>
+
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300"
+                         alt="Indian curry">
+                    <h3>Indian</h3>
+                </a>
+
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=300"
+                         alt="Chinese noodles">
+                    <h3>Chinese</h3>
+                </a>
+
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300"
+                         alt="Sweet dessert">
+                    <h3>Desserts</h3>
+                </a>
+
+                <a href="#menu" class="category">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=300"
+                         alt="Refreshing beverage">
+                    <h3>Beverages</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOD MENU USING CSS GRID -->
+        <section class="section menu-section" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow">MADE FRESH FOR YOU</p>
+                <h2>Our Popular Menu</h2>
+                <p>Discover your next favourite meal.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
+                             alt="Cheese pizza">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Pizza</span>
+                        <h3>Classic Cheese Pizza</h3>
+                        <p>Freshly baked crust topped with cheese, herbs and tomato sauce.</p>
+                        <div class="food-bottom">
+                            <strong>₹249</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+                             alt="Double patty burger">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Burgers</span>
+                        <h3>Double Cheese Burger</h3>
+                        <p>Juicy burger with melted cheese, lettuce and our signature sauce.</p>
+                        <div class="food-bottom">
+                            <strong>₹199</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500"
+                             alt="Indian curry served with rice">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Indian</span>
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Soft paneer cubes cooked in a creamy, rich tomato gravy.</p>
+                        <div class="food-bottom">
+                            <strong>₹229</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500"
+                             alt="Chinese fried rice">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Chinese</span>
+                        <h3>Veg Fried Rice</h3>
+                        <p>Wok-tossed rice with fresh vegetables and Asian seasonings.</p>
+                        <div class="food-bottom">
+                            <strong>₹179</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500"
+                             alt="Ice cream dessert">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Desserts</span>
+                        <h3>Chocolate Sundae</h3>
+                        <p>Delicious ice cream topped with chocolate sauce and toppings.</p>
+                        <div class="food-bottom">
+                            <strong>₹129</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500"
+                             alt="Cold refreshing drink">
+                    </div>
+                    <div class="food-details">
+                        <span class="food-category">Beverages</span>
+                        <h3>Fresh Fruit Cooler</h3>
+                        <p>A chilled and refreshing fruity drink for any time of day.</p>
+                        <div class="food-bottom">
+                            <strong>₹99</strong>
+                            <button type="button" class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SPECIAL OFFERS AND POSITIONING -->
+        <section class="section" id="offers">
+            <div class="section-heading">
+                <p class="eyebrow">DEALS YOU WILL LOVE</p>
+                <h2>Special Offers</h2>
+            </div>
+
+            <div class="offers-grid">
+                <article class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+                             alt="Pizza available at a discount">
+                        <span class="discount-badge">30% OFF</span>
+                    </div>
+                    <div class="offer-details">
+                        <h3>Pizza Party Deal</h3>
+                        <p>Get 30% off on selected pizzas.</p>
+                        <a href="#menu" class="text-link">Order this deal</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                             alt="Burger meal offer">
+                        <span class="discount-badge">BUY 1 GET 1</span>
+                    </div>
+                    <div class="offer-details">
+                        <h3>Burger Bonanza</h3>
+                        <p>Enjoy our special burger offer.</p>
+                        <a href="#menu" class="text-link">Order this deal</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CHEF'S SPECIAL: FLOAT AND CLEARFIX -->
+        <section class="section chef-section">
+            <div class="section-heading">
+                <p class="eyebrow">FROM OUR KITCHEN</p>
+                <h2>Chef's Special</h2>
+            </div>
+
+            <article class="chef-card clearfix">
+                <img class="chef-image"
+                     src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500"
+                     alt="Freshly prepared chef's special meal">
+
+                <h3>Signature Creamy Pasta</h3>
+                <p>
+                    Our chef's signature pasta combines fresh ingredients,
+                    perfectly cooked pasta, aromatic herbs and a rich,
+                    creamy sauce. Every serving is prepared fresh to bring
+                    restaurant-quality flavour straight to your table.
+                </p>
+                <p>
+                    Made with care and served with love, this dish is a
+                    must-try for every pasta lover.
+                </p>
+                <strong>Special Price: ₹279</strong>
+                <a href="#menu" class="primary-btn chef-btn">Order Chef's Special</a>
+            </article>
+        </section>
+
+        <!-- FOOD GALLERY -->
+        <section class="section" id="gallery">
+            <div class="section-heading">
+                <p class="eyebrow">A FEAST FOR YOUR EYES</p>
+                <h2>Food Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+                     alt="Freshly baked pizza">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                     alt="Delicious burger">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
+                     alt="Pizza with fresh toppings">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600"
+                     alt="Ice cream dessert">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600"
+                     alt="Asian food dish">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600"
+                     alt="Refreshing drinks">
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+                <h2>Contact Us</h2>
+            </div>
+
+            <address>
+                <p><strong>Restaurant:</strong> Crave Corner</p>
+                <p><strong>Address:</strong> Main Market, Patiala, Punjab, India</p>
+                <p><strong>Email:</strong>
+                    <a href="mailto:hello@cravecorner.example">hello@cravecorner.example</a>
+                </p>
+                <p><strong>Phone:</strong>
+                    <a href="tel:+911234567890">+91 12345 67890</a>
+                </p>
+            </address>
+        </section>
+
+        <!-- CSS DISPLAY DEMONSTRATION -->
+        <section class="section display-demo">
+            <h2>CSS Display Properties Demo</h2>
+
+            <p class="display-block">This paragraph demonstrates display: block.</p>
+
+            <p>
+                This is an
+                <span class="display-inline">inline element</span>
+                inside a paragraph.
+            </p>
+
+            <a href="#menu" class="display-inline-block">Inline-block Link</a>
+
+            <p class="display-none-demo">
+                This content is hidden using display: none.
+            </p>
+
+            <p class="display-note">
+                The header uses Flexbox, the menu uses Grid, and the category
+                section uses Flexbox with wrapping.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FIXED ORDER BUTTON -->
+    <a href="#menu" class="floating-order">Order Now ↑</a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>Crave Corner</h2>
+        <p>Serving happiness, one meal at a time.</p>
+        <p>&copy; 2026 Crave Corner. All rights reserved.</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+
+</body>
+</html>
+```
